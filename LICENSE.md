@@ -1,4 +1,4 @@
-Copyright (c) 2017 Silvestre Herrera.
+Copyright (c) 2019 Stephen Leslie.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
