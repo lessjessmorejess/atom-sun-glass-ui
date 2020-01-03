@@ -1,20 +1,20 @@
 @import "syntax-variables";
-@import "md-colors";
+@import "sg-colors";
 @import "fonts/roboto";
 
 // Colors
 @text-color: fade(@syntax-text-color, 65%);
 @text-color-subtle: fade(@syntax-text-color, 35%);
 @text-color-highlight: @syntax-text-color;
-@text-color-selected: @accent-text-color;
+@text-color-selected: @white-1;
 
-@text-color-info: @md-blue-300;
-@text-color-success: @md-light-green-500;
-@text-color-warning: @md-amber-400;
-@text-color-error: @md-red-400;
+@text-color-info: @light-blue;
+@text-color-success: @light-green;
+@text-color-warning: @light-yellow;
+@text-color-error: @light-red;
 
 @text-color-ignored: @text-color-subtle;
-@text-color-added: @text-color-success;
+@text-color-added: lighten(@text-color-success,5%);
 @text-color-renamed: @text-color-info;
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
@@ -26,6 +26,7 @@
 @background-color-highlight: rgba(255, 255, 255, 0.07);
 @background-color-selected: @base-color;
 
+//Not sure what this section is entirely//
 @app-background-color: @syntax-background-color;
 
 @base-background-color: @app-background-color;
@@ -63,6 +64,8 @@
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color: @tool-panel-border-color;
 
+//end confusion
+
 @scrollbar-background-color: @base-background-color; // Needs to be opaque -> atom/atom/issues/4578
 @scrollbar-color: fade(@base-color, 80%);
 
@@ -70,7 +73,7 @@
 @ui-site-color-2: @background-color-info; // blue
 @ui-site-color-3: @background-color-warning; // orange
 @ui-site-color-4: @md-deep-purple-400; // purple
-@ui-site-color-5: @md-yellow-300; // yellow
+@ui-site-color-5: @yellow; // yellow
 
 
 // Sizes
@@ -97,8 +100,8 @@
 
 // Main color variables – default values
 @accent-color: #FFFFFF;
-@accent-text-color: rgba(255,255,255,0.8);
-@base-color: #009688;
+@accent-text-color: rgba(255, 241, 241, 0.65);
+@base-color: @light-green;
 
 // Override main color variables with user's settings
 @import (optional) "user-settings";

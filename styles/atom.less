@@ -3,7 +3,7 @@
 }
 
 atom-workspace {
-    background-color: #F17A53;
+    background-color: @basic-background;
     background: linear-gradient(to right,
                                 rgba(222,119,99,0) 0%,
                                 rgba(222,119,99,1) 78%,
@@ -40,4 +40,11 @@ atom-workspace {
         background: @scrollbar-color;
         border-radius: 0;
     }
+}
+ul.tab-bar{
+  background:rgba(0,0,0,.7);
+}
+atom-text-editor .placeholder-text{
+  color: @white-2 !important;
+  font-weight:300;
 }
