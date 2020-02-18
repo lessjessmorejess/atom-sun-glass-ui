@@ -1,6 +1,6 @@
 ![](http://i.imgur.com/7C2H2mw.png)
 ---
-# Contributing to Atom Material UI
+# Contributing to Atom sun-glass UI
 
 Some of this content comes from Atom's Contributing guidelines. Please, don't be intimidated, this is just a *guideline*. All bug reports, feature requests, and questions are **always** welcome.
 
@@ -9,7 +9,7 @@ If you want to get your hands dirty and contribute with some code, you should fo
 
 ```shell
 git clone <your_forked_repo>
-cd atom-material-ui/
+cd atom-sun-glass-ui/
 apm link -d && npm install
 atom -d .
 ```
@@ -75,8 +75,8 @@ In a nutshell, we're following Airbnb's JavaScript style guide, except we use fo
 If you'd like to test new features and hunt bugs, follow these simple steps to get the latest (development) version.
 
 ```shell
-git clone git@github.com:silvestreh/atom-material-ui.git
-cd atom-material-ui/
+git clone git@github.com:silvestreh/atom-sun-glass-ui.git
+cd atom-sun-glass-ui/
 apm link -d && npm install
 ```
 
