@@ -17,15 +17,16 @@
 .tool-panel, atom-panel {
     position: relative;
     //footer (color change?)
-    background-color: @black-8;
+    background-color: @black-9;
 
     .text(normal);
 
+    //Find & Replace
     &.tool-panel.panel-bottom.bottom{
-      background-color: @black-6;
+      background-color: linear-gradient(to top, @black-7, @black-6);
     }
     &.tree-view{
-      background: linear-gradient(to top, @black-8, rgba(0,0,0,0.7));
+      background: linear-gradient(to top, @black-9, @black-7);
     }
     &.bottom,
     &.footer,
