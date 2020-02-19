@@ -40,7 +40,7 @@
         },
         "predefinedColor": {
           "title": "Predefined colors",
-          "description": "Pick a predefined color from the Material Design palette. If you change the Primary Color it will override this settings.",
+          "description": "Pick a predefined color from the sun-glass Design palette. If you change the Primary Color it will override this settings.",
           "type": "string",
           "enum": [
             "Amber",
@@ -160,12 +160,12 @@
   "keywords": [
     "ui",
     "theme",
-    "material",
+    "sun-glass",
     "md",
     "dynamic",
     "adaptive",
     "adapt to syntax",
-    "material design"
+    "sun-glass design"
   ],
   "license": "MIT",
   "main": "./lib/main",
