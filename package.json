@@ -30,5 +30,5 @@
   "bugs": {
     "url": "https://github.com/stephless/atom-sun-glass-ui/issues"
   },
-  "homepage": "https://github.com/stephless/atom-sun-glass-ui#readme"
+  "homepage": "git+https://github.com/stephless/atom-sun-glass-ui#readme"
 }
