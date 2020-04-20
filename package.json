@@ -1,6 +1,6 @@
 {
   "name": "atom-sun-glass-ui",
-  "version": "1.3.0",
+  "version": "1.0.0",
   "description": "A theme built based on [Atom Material UI] (https://github.com/atom-material/atom-material-ui)",
   "main": ".eslintrc.js",
   "directories": {
@@ -8,9 +8,6 @@
   },
   "dependencies": {},
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stephless/atom-sun-glass-ui.git"
@@ -25,6 +22,20 @@
     "transparent",
     "warm"
   ],
+  "dependencies": {
+    "tinycolor2": "1.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "engines": {
+    "atom": ">=1.17.0 <2.0.0"
+  },
   "author": "stephless",
   "license": "MIT",
   "bugs": {
