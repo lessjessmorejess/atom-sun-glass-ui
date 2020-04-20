@@ -1,6 +1,6 @@
 {
   "name": "atom-sun-glass-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A theme built based on [Atom Material UI] (https://github.com/atom-material/atom-material-ui)",
   "main": ".eslintrc.js",
   "directories": {
