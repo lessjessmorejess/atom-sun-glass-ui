@@ -172,7 +172,7 @@
   "name": "atom-sun-glass-ui",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephless/atom-sun-glass-ui.git"
+    "url": "https://github.com/stephless/atom-sun-glass-ui.git"
   },
   "theme": "ui",
   "version": "1.0.0"
