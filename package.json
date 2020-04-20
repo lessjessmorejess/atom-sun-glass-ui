@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephless/atom-sun-glass-ui.git"
+    "url": "https://github.com/stephless/atom-sun-glass-ui.git"
   },
   "keywords": [
     "atom",
@@ -39,5 +39,5 @@
   "bugs": {
     "url": "https://github.com/stephless/atom-sun-glass-ui/issues"
   },
-  "homepage": "git+https://github.com/stephless/atom-sun-glass-ui#readme"
+  "homepage": "https://github.com/stephless/atom-sun-glass-ui#readme"
 }
