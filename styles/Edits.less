@@ -1,0 +1,256 @@
+/*
+* Original Stylesheet to modify sun-glass theme
+*
+* This stylesheet is loaded when Atom starts up and is reloaded automatically
+* when it is changed and saved.
+*
+* Add your own CSS or Less to fully customize Atom.
+* If you are unfamiliar with Less, you can read more about it here:
+* http://lesscss.org
+*/
+
+
+//colors
+@green: rgba(0, 150, 136, 1);
+@purple: rgba(119, 42, 234, 1);
+@red: rgba(220, 0, 48, 1);
+@deep-red: rgba(142, 20, 46, 1);
+@orange: rgba(224, 108, 117, 1);
+@alt-orange: rgba(204, 114, 98, 1);
+@off-white: rgba(255, 202, 181, 1);
+@black: rgba(59, 64, 72, 1);
+@dark-black: rgba(58, 8, 19, 1);
+
+//blacks
+@black-7: rgba(22,22,22,.6);
+@black-6: rgba(30,30,30,.6);
+@black-8: rgba(44,44,44,.9);
+@black-10: rgba(255, 255, 255, 0.05);
+
+//whites
+@white: white;
+@white-1: rgba(255,255,255,.9);
+@white-2: rgba(255,255,255,.8);
+/* ----------------------------- Tree view edits -----------------------------*/
+ol.tree-view-root.full-menu.list-tree.has-collapsable-children.focusable-panel,
+.item-views,
+.tool-panel.tree-view,
+.github-GitHub-root,
+.github-Git-root{
+  //background-color: @black-7;
+  background: linear-gradient(to top, @black-7, rgba(0,0,0,0.45));
+}
+.github-Git-LargeIcon:before,
+.github-GitHub-LargeIcon:before{
+  color:rgba(255,255,255,.9);
+}
+.github-Accordion-content{
+  background: rgba(0,0,0,.1);
+  color: @white;
+}
+.btn.btn-primary,
+button.btn.icon.icon-remove-close,
+input.input-text.native-key-bindings,
+.github-CommitView-editor,
+button.github-CommitView-commitPreview.github-CommitView-button.btn:hover
+{
+  background-color: rgba(0,0,0,0.4);
+  color:rgba(255,255,255,.9);
+}
+.btn.btn-primary:hover,
+button.btn.icon.icon-remove-close:hover{
+  background-color: rgba(0,0,0,0.6)
+}
+
+/* ----------------------------- Find and Replace ----------------------------*/
+atom-panel.tool-panel.panel-bottom.bottom,
+.detail.item{
+  background-color: @black-6;
+}
+
+atom-panel.modal.overlay.from-top,
+//.message.item,
+//.content
+atom-notification.error .content
+{
+  background-color:rgba(62, 44, 34, 0.91);//@black-8;
+}
+
+//Regular text, property names, property values
+atom-text-editor,
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support,{
+  color: @white;
+}
+/* ------------------------------ Settings Page ------------------------------*/
+//Common Text
+.settings-view .setting-description,
+.settings-view .text,
+atom-text-editor .placeholder-text{
+  color: @white-2 !important;
+  font-weight:300;
+}
+//Heading Text
+.settings-view .checkbox .setting-title,
+.settings-view .settings-panel label,
+.pane-item section .section-heading,
+.pane-item .section .section-heading{
+  color: @white-1;
+}
+.control-group{
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.125rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.24);
+  margin-top: 1.5rem;
+  padding:1rem;
+}
+atom-text-editor-minimap,
+h3.sub-section-heading,
+table.native-key-bindings.table.text,
+h3.sub-section-heading.icon.icon-paintcan.has-items,
+h3.sub-section-heading.icon.icon-package.has-items{
+  background:rgba(0,0,0,.2);
+  padding: 0.5rem 1rem;
+}
+.settings-view .themes-panel .themes-picker-item{
+  padding: 10px 10px;
+}
+.settings-view .package-detail .package-card:hover,
+.settings-view .btn-wrap-group .btn:hover{
+  background-color:rgba(255,255,255,.15);
+}
+.settings-view .breadcrumb,
+h3.sub-section-heading.has-items,
+.settings-view .sub-section .sub-section-heading{
+  background: rgba(0,0,0,.4);
+  padding-left: 10px;
+}
+.alert-info, .settings-view .alert-info{
+  color: @purple;
+}
+a:hover, a:focus, .settings-view .link:hover, .settings-view .link:focus{
+  color: @purple;
+  text-decoration: none;
+}
+a, .github-GithubLoginView .github-GithubLoginView-Subview ol a,  a:visited, .settings-view .link:visited{
+  color:@green;
+}
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  border-color: @black;
+}
+//style highlighted selection
+.editor .selection .region{
+  background-image: linear-gradient(to right, rgba(59, 63, 74, .8), rgba(31, 107, 138, 0.2));
+  background-color: rgba(0,0,0,0);
+}
+atom-pane-container atom-pane .item-views .pane-item{
+  background:none;
+}
+ul.tab-bar{
+  background:rgba(0,0,0,.7);
+}
+atom-panel.footer{
+  background-color: rgba(26,26,26,.85);
+}
+
+div.minimap-visible-area{
+  background-color: rgba(255,255,255,.1);
+}
+//Line numbers column in all states
+.gutter-container{
+  background: rgba(0,0,0,.2) !important;
+}
+atom-text-editor .indent-guide{
+    color: rgba(255,255,255,0.2) !important;
+    background: rgba(0,0,0,.1) !important;
+}
+.line-number.cursor-line{
+  background-color:rgba(0,0,0,.5);
+  opacity: 1 !important;
+}
+div.line-number.cursor-line.cursor-line-no-selection{
+    background-color:rgba(31, 107, 138, 0.3);
+    opacity: 1 !important;
+}
+atom-text-editor .gutter .line-number{
+    color: #efefef;
+    opacity: 1;
+}
+atom-text-editor .gutter .line-number.cursor-line{
+  color: white;
+}
+div.line.cursor-line{
+  background:rgba(31, 107, 138, 0.3);
+}
+span.name.icon.icon-file-text,
+span.name.icon.icon-file-directory{
+  color: whitesmoke;
+}
+.message.fade-in{
+  color: @black;
+}
+
+
+
+
+
+/* ---------------------------------- Syntax ---------------------------------*/
+.syntax--storage,
+.syntax--punctuation.syntax--definition.syntax--definition,
+.syntax--variable.syntax--other.syntax--less{
+    color: @deep-red;
+}
+.syntax--entity.syntax--other.syntax--attribute-name{
+  color: @black;
+}
+.syntax--keyword{
+    color: @dark-black;
+}
+
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator,
+.syntax--keyword.syntax--control,
+span.syntax--punctuation.syntax--separator.syntax--list.syntax--comma.syntax--css {
+    color: white;
+}
+
+.syntax--entity.syntax--name.syntax--type {
+    color: @red;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class{
+  color: @purple;
+}
+.syntax--entity.syntax--name.syntax--function,
+.syntax--string,
+.syntax--variable.syntax--parameter  {
+    color: @purple;
+}
+
+.syntax--variable  {
+    color: @off-white;
+}
+
+.syntax--constant,
+.syntax--constant.syntax--numeric {
+    color: @purple;
+}
+.syntax--keyword.syntax--other.syntax--unit,{
+  color: white;
+}
+.syntax--comment{
+  color: @black;
+}
+
+.syntax--entity.syntax--name.syntax--tag,
+.syntax--punctuation.syntax--definition.syntax--tag.syntax--cs,
+.syntax--punctuation.syntax--definition.syntax--comment{
+  color: @dark-black;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id,
+.syntax--support.syntax--function,
+.settings-view .link,
+.alert.alert-info.icon.icon-heart{
+  color: @green;
+}
